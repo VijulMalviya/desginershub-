@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    margin: 0;
+}
+.bg-1{
+    height: 100vh;
+}
+.right-img{
+    animation: rightimg 2s 0s infinite alternate ease-in-out ;
+    -webkit-animation: rightimg 2s 0s infinite alternate-reverse ease-in-out both ;
+}
+@keyframes rightimg{
+    from{
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+}
+    to{
+        transform: rotate(10deg);
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+}
+}
+.services-img{
+    animation: servicesimg 4s 0s infinite alternate ease-in-out ;
+    -webkit-animation: servicesimg 4s 0s infinite alternate ease-in-out ;
+}
+@keyframes servicesimg{
+    /* from{
+        transform: scale(0.4);
+        -webkit-transform: scale(0.4);
+        -moz-transform: scale(0.4);
+        -ms-transform: scale(0.4);
+        -o-transform: scale(0.4);
+}
+    to{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}  */
+from{
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+}
+to{
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+
+ 
+
+}
+
+.left-text{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.left-text p{
+    
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+.message-box{
+    position: absolute;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    font-weight:400;
+    font-size: 0.8rem;
+    background-color: #957ad4;
+    left: 50%;
+    transform:translate(-50%);
+    -webkit-transform:translate(-50%);
+    -moz-transform:translate(-50%);
+    -ms-transform:translate(-50%);
+    -o-transform:translate(-50%);
+    text-transform: capitalize;
+    box-shadow: 0px 4px 18px rgba(128, 128, 128, 0.445);
+}
+.message-box2{
+    background:rgb(238, 238, 238);
+}
+.navbar-toggler{
+    color: black !important;
+    border: none !important;
+}
+.about-right p{
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.socialmedia .icons{
+ margin-top: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.about-right h5 , .services h5 , .services h1{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+hr{
+    color: #957ad4;
+    margin: 0.25rem 0rem;
+    opacity: 0.5;   
+}
+.services p{
+    font-size: 0.8rem;
+}
+.bg-3{
+    height: 50vh;
+    background-image: url('https://mediaonelink.com/wp-content/uploads/2017/04/demo-content-homepage-Creative-Department-Uncode.jpg');
+    background-size: cover;
+    background-position:  center;
+    background-attachment: fixed;
+}
+.upbtn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.up{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-company-name p{
+    font-size: 0.8rem;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    
+}
+.footer-links a:hover{
+    color: yellow;
+}
+.footer-social{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.footer-social .fa:hover{
+    color: yellow;
+}
+img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+@media only screen and (max-width:768px){
+    .footer-links{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
