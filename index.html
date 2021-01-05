@@ -19,7 +19,7 @@
    <body>
       <div class="container-fluid ">
          <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                <div class="container-fluid">
                   <a class="navbar-brand" href="#"><b> <span style="text-transform: uppercase;"> Designer Hub !!</span></b></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,16 +28,16 @@
                   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                           <a class="nav-link active" aria-current="page" href="#">Home</a>
+                           <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="#">About Us</a>
+                           <a class="nav-link" href="#about">About Us</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="#">Services</a>
+                           <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="#">Contact Us</a>
+                           <a class="nav-link" href="#contact">Contact Us</a>
                         </li>
                      </ul>
                      <form class="d-flex">
@@ -48,7 +48,7 @@
                </div>
             </nav>
          </div>
-         <div class="container">
+         <div class="container mt-5 p-5" id="home">
             <div class="row">
                <div class="col-12 col-md-6 p-5 left-text">
                   <p>designer</p>
@@ -71,7 +71,7 @@
                <h2 class="text-center mt-5"></h2>
             </div>
          </div>
-         <div class="container">
+         <div class="container" id="about">
             <div class="row mt-5">
                <div class="col-12 col-md-6 p-3">
                   <div class="row">
@@ -151,7 +151,7 @@
             <div class="bg-3 col-12">
             </div>
          </div>
-         <div class="container">
+         <div class="container" id="services">
             <div class="row">
                <div class="col-12 mt-5 services">
                   <div class="row">
@@ -212,7 +212,7 @@
             </div>
          </div>
         
-         <div class="container">
+         <div class="container" id="contact">
             
             <div class="row mt-5">
                 <div class="row">
@@ -242,23 +242,23 @@
                   <div class="col-10 mx-auto about-right">
                      <h5>Contact Us</h5>
                      <br>
-                     <form action="">
+                     <form action="" id="form">
                         <div class="form-group mt-2">
-                           <label for="email"> <small><b>Name:</b></small> </label>
-                           <input type="email" class="form-control" placeholder="Enter email" id="email">
+                           <label for="name"> <small><b>Name:</b></small> </label>
+                           <input type="name" name="name" class="form-control" placeholder="Enter Name" id="name">
                         </div>
                         <div class="form-group mt-2">
                            <label for="email"> <small> <b> Email: </b> </small></label>
-                           <input type="email" class="form-control" placeholder="Enter email" id="email">
+                           <input type="email" name="email" class="form-control" placeholder="Enter email" id="email">
                         </div>
                         <div class="form-group mt-2">
-                           <label for="email"> <small><b>Phone Number:</b></small>  </label>
-                           <input type="email" class="form-control" placeholder="Enter email" id="email">
+                           <label for="phone"> <small><b>Phone Number:</b></small>  </label>
+                           <input type="text" name="phone" inputmode="tel" class="form-control" placeholder="Enter Phone Number" id="phone">
                         </div>
                         <div class="form-group mt-2">
-                           <label class="control-label col-sm-2" for="comment"> <small><b>Message:</b></small> </label>
+                           <label class="control-label col-sm-2" for="msg"> <small><b>Message:</b></small> </label>
                            <div class="col-12 ">
-                              <textarea class="form-control" rows="5" id="comment" placeholder="........" ></textarea>
+                              <textarea class="form-control" name="msg" rows="5" id="msg" placeholder="........" ></textarea>
                            </div>
                         </div>
                         <br>
@@ -283,10 +283,10 @@
                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium asperiores labore deleniti veniam rem ab consequuntur dicta explicabo nobis ex!</p>
             </div>
             <div class=" col-12 col-md-4 p-4 footer footer-links text-center">
-               <a class="p-2"  href="">Home</a>
-               <a  class="p-2"  href="">About Us</a>
-               <a  class="p-2"  href="">Services</a>
-               <a class="p-2"  href="">Contact Us</a>
+               <a class="p-2"  href="#home">Home</a>
+               <a  class="p-2"  href="#about">About Us</a>
+               <a  class="p-2"  href="#services">Services</a>
+               <a class="p-2"  href="#contact">Contact Us</a>
             </div>
             <div class="col-12 col-md-4 footer p-4 footer-social text-center ">
                <div class="row">
