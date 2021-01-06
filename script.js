@@ -1,3 +1,31 @@
+
+  AOS.init();
+
+  var typed = new Typed('.about-right h5', {
+    strings: ["About Us", "Who we are"],
+    typeSpeed: 30,
+    backSpeed: 50,
+    backDelay: 700,
+    showCursor: false,
+    loop: true,
+    loopCount: Infinity
+  });
+
+  var typed = new Typed('.services-1 h1', {
+    strings: ["We Do ...", "Our Storng Fields"],
+    typeSpeed: 30,
+    backSpeed: 50,
+    backDelay: 700,
+    showCursor: false,
+    loop: true,
+    loopCount: Infinity
+  });
+
+
+
+ 
+
+
 $(document).ready(function() {
     $("#form").validate({
       rules: {
@@ -42,3 +70,7 @@ $(document).ready(function() {
       }
     });
   });
+
+
+
+
